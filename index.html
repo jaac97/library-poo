@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/main.js" defer></script>
+</head>
+
+<body class="body">
+    <aside class="sidebar">
+        <div class="bar">
+            <div href="#" class="logo">
+                <img class="logo__img" src="img/logo.png" alt="logo library" />
+                <span class="logo__title">Library</span>
+            </div>
+        </div>
+        <form action="#" id="form__addBook" class="form">
+            <div class="form__group">
+                <input class="form__text" type="text" id="title" autocomplete="book-title" />
+                <label class="form__control" for="title">Book's title</label>
+            </div>
+            <div class="form__group">
+                <input class="form__text" type="text" id="author" autocapitalize="book-author"/>
+                <label class="form__control" for="author">Book's author</label>
+            </div>
+            <div class="form__group">
+                <input class="form__number" type="number" id="pages" />
+                <label class="form__control" for="pages">Book's pages</label>
+            </div>
+            <div class="form__group form__group--checkbox ">
+                <input class="form__checkbox" type="checkbox" id="read" />
+
+                <label class="form__control" for="read">I have read this Book (Optional)</label>
+            </div>
+            <div class="form__group">
+                <button class="button button--secondary" type="submit">Add a new book </button>
+            </div>
+        </form>
+        <footer class="footer">
+            <p class="footer__created">Created by <a class="footer__author" target="_blank" href="https://www.linkedin.com/in/josue-alarcon-camino/">Josué
+                    Alarcón</a> 2022</p>
+        </footer>
+    </aside>
+    <main class="main">
+        <ul class="list">
+            <li class="list__item">
+                <p class="list__category">Books read:<span id="books__read" class="list__number"></span></p>
+            </li>
+            <li class="list__item">
+                <p class="list__category">Books unread:<span id="books__unread" class="list__number"></span></p>
+            </li>
+            <li class="list__item">
+                <p class="list__category">Total books:<span id="books__total" class="list__number"></span></p>
+            </li>
+            <li class="list__item">
+                <button class="button button--primary" type="button">Delete All</button>
+            </li>
+        </ul>
+        <table class="books">
+            <thead class="books__head">
+                <tr class="books__row">
+                    <th class="books__header">Title</th>
+                    <th class="books__header">Author</th>
+                    <th class="books__header">Pages</th>
+                    <th class="books__header">Status</th>
+                    <th class="books__header">Options</th>
+                </tr>
+            </thead>
+            <tbody class="books__body">
+
+            </tbody>
+        </table>
+    </main>
+    <script>
+    </script>
+</body>
+
+</html>

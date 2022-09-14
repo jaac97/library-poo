@@ -1,0 +1,231 @@
+@font-face {
+  font-family: Roboto;
+  src: url('../font/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url('../font/Roboto-Bold.ttf');
+
+}
+
+:root {
+  --primary: #e27f6f;
+  --darkPrimary: #CF7365;
+  --secondary: #699AF0;
+  --darksecondary: #608EDB;
+  --info: #D16EFA;
+  --success: #FACC6E;
+  --warning: #CEF069;
+  --font: 'Charmonman', cursive;
+  --fontBold: CharmonmanBold, cursive;
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  min-height: 100vh;
+  font-family: var(--font);
+  font-size: 1.8rem;
+}
+
+.sidebar {
+  background-color: var(--primary);
+  padding: 3rem;
+  position: relative;
+}
+
+.bar {
+  margin-bottom: 3rem;
+}
+
+.logo {
+  height: 10rem;
+  overflow: hidden;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.logo__img {
+  object-fit: contain;
+  max-width: 25%;
+}
+
+.logo__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  opacity: .7;
+}
+
+/* Form */
+.form__group {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.form__group--checkbox .form__control {
+  position: static;
+  font-size: 1.6rem;
+  height: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.form__text,
+.form__number {
+  all: unset;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  max-height: .8rem;
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 2px dotted;
+  outline: none;
+}
+
+/* Custom checkbox */
+.form__group--checkbox {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.form__control {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  opacity: 0.6;
+  transition: all .3s ease;
+  width: 100%;
+  height: 100%;
+  line-height: 3;
+
+}
+
+.form__text:focus,
+.form__number:focus {
+  border-bottom: 2px dotted white;
+}
+
+.input--valid,
+.form__text:focus+.form__control,
+.form__number:focus+.form__control {
+  top: 0;
+  font-size: 1rem;
+  line-height: 0;
+}
+
+.button {
+  border: none;
+  color: #fff;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: var(--primary);
+}
+
+.button--primary:hover {
+  background-color: var(--darkPrimary);
+}
+
+.button--secondary {
+  background-color: var(--secondary);
+}
+
+.button--secondary:hover {
+  background-color: var(--darksecondary);
+}
+.button--info{
+  background-color: var(--info);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__author {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Main */
+.main {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 0;
+}
+
+.list__item {
+  font-weight: 400;
+}
+
+.list__categor {
+  font-weight: 400;
+}
+.books{
+  border-spacing: 0;
+  width: 60%;
+}
+.books__head{
+  background-color: var(--secondary);
+  border-spacing: 0;
+  margin-bottom: 0.5rem;
+
+}
+.books__row{
+  border-spacing: 0;
+
+}
+.books__header{
+  border-spacing: 0;
+  padding: 1rem;
+  opacity: .7;
+}
+.books__item{
+  padding-top: .5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.book__img{
+  max-width: 20%;
+  margin: 0 auto;
+  cursor: pointer;
+}
