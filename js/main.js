@@ -72,7 +72,7 @@
 
           // Svg Book completed
     const bookComplete = document.createElement('img');
-    bookComplete.src = "../img/bookComplete.svg";
+    bookComplete.src = "./img/bookComplete.svg";
     bookComplete
       .classList
       .add('book__img');
@@ -82,7 +82,7 @@
 
     // Svg Book pending to read
     const pendingBook = document.createElement('img');
-    pendingBook.src = "../img/book.svg";
+    pendingBook.src = "./img/book.svg";
     pendingBook
       .classList
       .add('book__img');
