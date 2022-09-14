@@ -162,12 +162,12 @@
       console.log(e.target.dataset.completed, 'Data set es', true)
 
       e.target.dataset.completed = false
-      e.target.src = "../img/book.svg";
+      e.target.src = "./img/book.svg";
     } else if (state === 'false') {
       console.log(e.target.dataset.completed, 'Data set es', false)
 
       e.target.dataset.completed = true
-      e.target.src = "../img/bookComplete.svg";
+      e.target.src = "./img/bookComplete.svg";
     } else {
       console.log("este")
     }
